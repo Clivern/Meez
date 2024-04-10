@@ -24,19 +24,37 @@ langchain.llm_cache = False
 
 
 class Langchain:
+    """Langchain Class"""
 
-    @staticmethod
+    def __init__(self, openai_api_key: str):
+        """Initialize the Langchain Class"""
+        self._openai_api_key = openai_api_key
+
     def create_chat_chain(
-        openai_api_key: str,
+        self,
         model_name="gpt-4o-mini",
         temperature=0,
         prompt_template=None,
         callbacks=[],
     ):
+        """
+        Create a chat chain
+
+        Args:
+            openai_api_key: The OpenAI API key
+            model_name: The model name
+            temperature: The temperature
+            prompt_template: The prompt template
+            callbacks: The callbacks
+
+        Returns:
+            The chat chain
+        """
+
         prompt = ChatPromptTemplate.from_messages(prompt_template)
 
         llm = ChatOpenAI(
-            openai_api_key=openai_api_key,
+            openai_api_key=self._openai_api_key,
             model_name=model_name,
             temperature=temperature,
             callbacks=callbacks,

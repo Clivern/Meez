@@ -12,7 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .langchain import Langchain
-from .intention import Intention
 
-__all__ = ["Langchain", "Intention"]
+class LangGraph:
+    """LangGraph Class"""
+
+    def __init__(self):
+        """Initialize the LangGraph Class"""
+        pass
