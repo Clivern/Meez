@@ -135,6 +135,9 @@ def main():
     initial_state = get_messages_from_database()
     initial_state.append({"role": "user", "content": user_input})
 
+    if not graph.validate_graph():
+        raise Exception("Graph is not valid")
+
     # Run graph execution
     print("Running graph ...")
 

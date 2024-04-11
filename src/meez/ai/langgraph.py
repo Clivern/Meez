@@ -140,6 +140,7 @@ class LangGraph:
             Final state after graph execution
         """
         compiled_graph = self.compile()
+
         return compiled_graph.invoke(initial_state, config=config)
 
     def stream(
@@ -156,6 +157,7 @@ class LangGraph:
             Generator yielding each step of execution
         """
         compiled_graph = self.compile()
+
         return compiled_graph.stream(initial_state, config=config)
 
     def get_node_info(self, node_name: str) -> Optional[Dict[str, Any]]:
