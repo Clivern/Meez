@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
+
 
 class FileSystem:
     """
@@ -23,5 +25,8 @@ class FileSystem:
         """
         Reads the contents of a file.
         """
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"File not found: {file_path}")
+
         with open(file_path, "r") as f:
-            return f.read()
+            return f.read().strip()

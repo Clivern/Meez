@@ -27,7 +27,12 @@ class Langchain:
     """Langchain Class"""
 
     def __init__(self, openai_api_key: str):
-        """Initialize the Langchain Class"""
+        """
+        Initialize the Langchain Class
+
+        Args:
+            openai_api_key: The OpenAI API key
+        """
         self._openai_api_key = openai_api_key
 
     def create_chat_chain(

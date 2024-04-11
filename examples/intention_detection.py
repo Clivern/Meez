@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import os
-from meez.ai import Langchain, Intention
+from meez.core import Langchain, Intention
 
 
 def intention_detection():

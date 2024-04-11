@@ -14,8 +14,8 @@
 
 import os, json, uuid
 from datetime import datetime
-from meez.ai.langgraph import LangGraph, MainState
-from meez.ai import Langchain, Intention
+from meez.core.langgraph import LangGraph, MainState
+from meez.core import Langchain, Intention
 
 
 def get_messages_from_database():

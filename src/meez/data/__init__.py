@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .logger import Logger
-from .file_system import FileSystem
+from .reader import DataReader, FileReader, TextReader, JsonReader
 
 
-__all__ = ["Logger", "FileSystem"]
+__all__ = ["DataReader", "FileReader", "TextReader", "JsonReader"]

@@ -20,7 +20,8 @@ class Intention:
     """Intention Class"""
 
     def __init__(self, langchain: Langchain, intentions: List[str]):
-        """Initialize the Intention Class
+        """
+        Initialize the Intention Class
 
         Args:
             langchain: The langchain instance

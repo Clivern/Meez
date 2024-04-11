@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from meez.ai.langgraph import LangGraph, MainState
+from meez.core.langgraph import LangGraph, MainState
 
 
 def step1(state: MainState) -> MainState:
