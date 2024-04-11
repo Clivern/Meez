@@ -37,7 +37,9 @@ class LangGraph:
         self._nodes = {}
         self._entry_point = None
 
-    def add_node(self, name: str, action: Callable, description: str = "") -> 'LangGraph':
+    def add_node(
+        self, name: str, action: Callable, description: str = ""
+    ) -> "LangGraph":
         """
         Add a node to the graph
 
@@ -49,35 +51,43 @@ class LangGraph:
         Returns:
             self for method chaining
         """
-        self._nodes[name] = {
-            'action': action,
-            'description': description
-        }
+        self._nodes[name] = {"action": action, "description": description}
 
         self._graph.add_node(name, action)
 
         return self
 
-    def add_edge(self, from_node: str, to_node: str, condition: Optional[Callable] = None) -> 'LangGraph':
+    def add_edge(self, from_node: str, to_node: str) -> "LangGraph":
         """
         Add an edge between nodes
 
         Args:
             from_node: Source node name
             to_node: Target node name (can be END for terminal nodes)
-            condition: Optional conditional function to determine if edge should be taken
 
         Returns:
             self for method chaining
         """
-        if condition:
-            self._graph.add_conditional_edges(from_node, condition)
-        else:
-            self._graph.add_edge(from_node, to_node)
+        self._graph.add_edge(from_node, to_node)
 
         return self
 
-    def set_entry_point(self, node_name: str) -> 'LangGraph':
+    def add_conditional_edge(self, from_node: str, condition: Callable) -> "LangGraph":
+        """
+        Add a conditional edge between nodes
+
+        Args:
+            from_node: Source node name
+            condition: Conditional function to determine if edge should be taken
+
+        Returns:
+            self for method chaining
+        """
+        self._graph.add_conditional_edges(from_node, condition)
+
+        return self
+
+    def set_entry_point(self, node_name: str) -> "LangGraph":
         """
         Set the entry point of the graph
 
@@ -93,7 +103,7 @@ class LangGraph:
 
         return self
 
-    def add_finish_point(self, node_name: str) -> 'LangGraph':
+    def add_finish_point(self, node_name: str) -> "LangGraph":
         """
         Add a finish point to the graph
 
@@ -116,7 +126,9 @@ class LangGraph:
         """
         return self._graph.compile()
 
-    def run(self, initial_state: Dict[str, Any], config: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    def run(
+        self, initial_state: Dict[str, Any], config: Optional[Dict[str, Any]] = None
+    ) -> Dict[str, Any]:
         """
         Run the graph with initial state
 
@@ -130,7 +142,9 @@ class LangGraph:
         compiled_graph = self.compile()
         return compiled_graph.invoke(initial_state, config=config)
 
-    def stream(self, initial_state: Dict[str, Any], config: Optional[Dict[str, Any]] = None) -> Generator[Dict[str, Any], None, None]:
+    def stream(
+        self, initial_state: Dict[str, Any], config: Optional[Dict[str, Any]] = None
+    ) -> Generator[Dict[str, Any], None, None]:
         """
         Stream the graph execution step by step
 
