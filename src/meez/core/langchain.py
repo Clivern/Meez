@@ -55,7 +55,6 @@ class Langchain:
         Returns:
             The chat chain
         """
-
         prompt = ChatPromptTemplate.from_messages(prompt_template)
 
         llm = ChatOpenAI(
