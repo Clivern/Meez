@@ -11,9 +11,6 @@
 .. image:: https://img.shields.io/pypi/l/Meez.svg
     :alt: License
     :target: https://pypi.org/project/Meez/
-.. image:: https://img.shields.io/pypi/pyversions/Meez.svg
-    :alt: Python Versions
-    :target: https://pypi.org/project/Meez/
 
 |
 
