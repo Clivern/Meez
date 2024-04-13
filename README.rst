@@ -98,7 +98,7 @@ Usage Examples
 --------------
 
 Intention Detection
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 Detect user intentions from natural language:
 
