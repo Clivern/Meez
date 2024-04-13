@@ -139,7 +139,7 @@ Detect user intentions from natural language:
         print(f"'{text}' → {intention}")
 
 Contextual Responses
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 Generate responses based on context data:
 
@@ -178,7 +178,7 @@ Generate responses based on context data:
     )
 
 Workflow Automation with LangGraph
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create complex AI workflows:
 
@@ -244,7 +244,7 @@ Development
 -----------
 
 Setup Development Environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -257,7 +257,7 @@ Setup Development Environment
     pip install -e .
 
 Running Tests
-^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 .. code-block:: bash
 
