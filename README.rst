@@ -2,6 +2,8 @@
   :width: 700
   :alt: Meez - AI Assistant and Copilot SDK for SaaS Applications
 
+|
+
 .. image:: https://img.shields.io/pypi/v/Meez.svg
     :alt: PyPI-Server
     :target: https://pypi.org/project/Meez/
