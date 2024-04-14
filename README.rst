@@ -1,6 +1,6 @@
 .. image:: https://images.unsplash.com/photo-1650999344693-b76317f7b9ae
   :width: 700
-  :alt: Meez - AI Assistant and Copilot for SaaS Applications
+  :alt: Meez - AI Assistant and Copilot SDK for SaaS Applications
 
 .. image:: https://img.shields.io/pypi/v/Meez.svg
     :alt: PyPI-Server
@@ -18,7 +18,7 @@
 Meez
 =====
 
-**AI Assistant and Copilot for SaaS Applications**
+**AI Assistant and Copilot SDK for SaaS Applications**
 
 Meez is a powerful Python library that provides AI-powered assistance capabilities for SaaS applications. It offers intention detection, contextual responses, and workflow automation using LangChain and LangGraph.
 
