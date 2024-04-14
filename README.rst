@@ -13,6 +13,9 @@
 .. image:: https://img.shields.io/pypi/l/Meez.svg
     :alt: License
     :target: https://pypi.org/project/Meez/
+.. image:: https://static.pepy.tech/badge/meez
+    :alt: PyPI Downloads
+    :target: https://pepy.tech/projects/meez
 
 |
 
