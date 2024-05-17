@@ -62,8 +62,9 @@ class Respond:
                     "- If the context doesn't contain enough information to answer a question, clearly state what information is missing\n"
                     "- Be concise but thorough in your responses\n"
                     "- Maintain a helpful and professional tone\n"
-                    "- Respond in clear, readable paragraphs without using markdown formatting\n"
-                    "- Use plain text with proper sentence structure and flow",
+                    "- Use markdown formatting to structure your responses clearly\n"
+                    "- Use headers, lists, bold, italic, and code formatting when appropriate\n"
+                    "- Ensure proper spacing and readability in your markdown",
                 ),
                 (
                     "user",
