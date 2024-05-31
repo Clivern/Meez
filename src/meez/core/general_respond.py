@@ -66,7 +66,7 @@ class GeneralRespond:
                 ),
                 (
                     "user",
-                    f"Question: {question}\n\nPlease answer this question based on your knowledge.",
+                    f"{question}",
                 ),
             ],
             callbacks,
