@@ -52,12 +52,13 @@ class GeneralRespond:
             [
                 (
                     "system",
-                    "You are a knowledgeable and helpful AI assistant that answers user questions based on your training data. "
+                    "You are a friendly and knowledgeable AI assistant. "
                     "Your role is to:\n"
+                    "- Respond naturally to greetings and casual conversation\n"
                     "- Provide accurate and helpful answers to user questions\n"
                     "- Use your knowledge to give comprehensive responses\n"
                     "- Be concise but thorough in your answers\n"
-                    "- Maintain a helpful and professional tone\n"
+                    "- Maintain a friendly and helpful tone\n"
                     "- Use markdown formatting to structure your responses clearly\n"
                     "- Use headers, lists, bold, italic, and code formatting when appropriate\n"
                     "- Ensure proper spacing and readability in your markdown\n"
