@@ -179,6 +179,24 @@ Generate responses based on context data:
         data=file_reader
     )
 
+General Respond
+^^^^^^^^^^^^^^^
+
+Respond to general user questions using AI knowledge:
+
+.. code-block:: python
+
+    from meez.core import Langchain, GeneralRespond
+
+    # Initialize
+    langchain = Langchain(openai_api_key=api_key)
+    respond = GeneralRespond(langchain)
+
+    # Get response
+    question = "What is the capital of France?"
+    response = respond.run(question=question)
+    print(f"Response: {response}")
+
 Workflow Automation with LangGraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -16,6 +16,7 @@ from .langchain import Langchain
 from .intention import Intention
 from .langgraph import LangGraph
 from .respond import Respond
+from .general_respond import GeneralRespond
 
 
-__all__ = ["Langchain", "Intention", "LangGraph", "Respond"]
+__all__ = ["Langchain", "Intention", "LangGraph", "Respond", "GeneralRespond"]
