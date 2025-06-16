@@ -1,0 +1,4 @@
+twine==6.1.0
+wheel==0.45.1
+tox==4.26.0
+setuptools-scm==8.3.1
