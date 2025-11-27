@@ -1,4 +1,4 @@
 twine==6.2.0
 wheel==0.45.1
-tox==4.30.3
+tox==4.32.0
 setuptools-scm==9.2.2
